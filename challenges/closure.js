@@ -29,15 +29,12 @@ myFunction();
 
 
 
-const summation = param => {
-    let counter = 0;
-    function increment() {
-        for(let i = param; i <= 1; i--) {
-          param += (param - 1)
-        }
-        return param;
-      }
-    return increment();
-  }
+const summation = num => {
+    let result = 0;
+    for(let i = num; i >= 1; i--) {
+      result += i;
+    }
+    return result;
+}
 
 console.log(summation(4));
