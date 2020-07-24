@@ -19,7 +19,7 @@ myFunction();
 // Explanation: 
   /*
   
-  nestedFunction has access to internal because internal has formed a closure with nestedFunction because internal is used inside it. Nested functions have access to data outside of its scope.
+  Nested functions have access to data outside of their scope.
 
   */
 
