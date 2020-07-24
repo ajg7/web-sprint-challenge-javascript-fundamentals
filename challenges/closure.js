@@ -17,8 +17,24 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+  /*
+  
+  Nested functions have access to data outside of their scope.
 
+  */
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+
+
+const summation = num => {
+    let result = 0;
+    for(let i = num; i >= 1; i--) {
+      result += i;
+    }
+    return result;
+}
+
+console.log(summation(4));
