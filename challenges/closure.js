@@ -17,8 +17,27 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+  /*
+  
+  nestedFunction has access to internal because internal has formed a closure with nestedFunction because internal is used inside it. Nested functions have access to data outside of its scope.
 
+  */
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+
+
+const summation = param => {
+    let counter = 0;
+    function increment() {
+        for(let i = param; i <= 1; i--) {
+          param += (param - 1)
+        }
+        return param;
+      }
+    return increment();
+  }
+
+console.log(summation(4));
